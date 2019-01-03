@@ -11,7 +11,6 @@ local encoding = require 'encoding'
 local inicfg = require 'inicfg'
 local sampev = require 'lib.samp.events'
 
-
 encoding.default = 'CP1251'
 u8 = encoding.UTF8
 
@@ -37,10 +36,10 @@ function main()
 end
 
 function cmd_auth()
-	if cmd_auth then
+	if auth_status then
 		sampAddChatMessage('[Информация] {7B68EE}Вы уже авторизованы!', 0xDAA520)
 	else
-    auth.send()
+    print('Starting load...')
 		auth_status = true
 	end
 end
