@@ -7,3 +7,4 @@ lib/iconv/README-libiconv
 lib/iconv/COPYING-libiconv
 config/moonloader/Bank_Helper/general_settings.ini
 config/hungry - arizona rp.ini
+ArizonaAssistant/libs/auth.lua

@@ -10,6 +10,8 @@ local imgui = require 'imgui'
 local encoding = require 'encoding'
 local inicfg = require 'inicfg'
 local sampev = require 'lib.samp.events'
+
+local auth = require 'ArizonaAssistant/libs/auth' -- Библиотека авторизации
 encoding.default = 'CP1251'
 u8 = encoding.UTF8
 
@@ -38,7 +40,7 @@ function cmd_auth()
 	if cmd_auth then
 		sampAddChatMessage('[Информация] {7B68EE}Вы уже авторизованы!', 0xDAA520)
 	else
-
+    auth.send()
 		auth_status = true
 	end
 end
