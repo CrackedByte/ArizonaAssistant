@@ -9,4 +9,4 @@ local keys = require "vkeys"
 local imgui = require 'imgui'
 local encoding = require 'encoding'
 local inicfg = require 'inicfg'
-local sampev = require 'lib.samp.events'
+local sampev = require 'lib.samp.events' 
