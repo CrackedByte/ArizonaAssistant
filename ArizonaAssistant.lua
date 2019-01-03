@@ -35,5 +35,9 @@ function main()
 end
 
 function cmd_auth()
-	auth_status = true
+	if cmd_auth then
+		sampAddChatMessage('[Информация] {7B68EE}Вы уже авторизованы!', 0xDAA520)
+	else
+		auth_status = true
+	end
 end
