@@ -11,7 +11,7 @@ local encoding = require 'encoding'
 local inicfg = require 'inicfg'
 local sampev = require 'lib.samp.events'
 
-local auth = require 'ArizonaAssistant/libs/auth' -- Библиотека авторизации
+
 encoding.default = 'CP1251'
 u8 = encoding.UTF8
 
