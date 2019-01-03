@@ -14,7 +14,7 @@ encoding.default = 'CP1251'
 u8 = encoding.UTF8
 
 local auth_status = false
--- ===================== [ Vars ] ======================
+-- ===================== [ Vars ] ====================== 
 
 function sampev.onSendSpawn()
 	if auth_status == false then
@@ -38,6 +38,11 @@ function cmd_auth()
 	if cmd_auth then
 		sampAddChatMessage('[Информация] {7B68EE}Вы уже авторизованы!', 0xDAA520)
 	else
+
 		auth_status = true
 	end
+end
+
+function imgui.OnDrawFrame()
+
 end
